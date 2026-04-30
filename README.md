@@ -19,7 +19,7 @@
 [![Tests](https://img.shields.io/badge/Tests-18%2F18_Passing-2ECC71.svg?style=for-the-badge&logo=pytest&logoColor=white)](#-how-to-run)
 [![License](https://img.shields.io/badge/License-MIT-success.svg?style=for-the-badge)](LICENSE)
 
-[**🚀 Live Executive Dashboard →**](https://global-horizon-bank-dwh-project.streamlit.app/)
+[**🚀 Live Executive Dashboard →**](https://appexecutivepy-rjvmgj6dmkvyqkfydicmqw.streamlit.app/)
 
 </div>
 
@@ -540,7 +540,7 @@ This repository is a **comprehensive demonstration of senior data engineering an
 
 ⭐ **If this project demonstrates the capabilities you're looking for, please star the repository.**
 
-[![View Live Dashboard](https://img.shields.io/badge/View_Live_Dashboard-FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)](https://global-horizon-bank-dwh-project.streamlit.app/)
+[![View Live Dashboard](https://img.shields.io/badge/View_Live_Dashboard-FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)](https://appexecutivepy-rjvmgj6dmkvyqkfydicmqw.streamlit.app/)
 [![Follow on GitHub](https://img.shields.io/badge/Follow_on_GitHub-181717.svg?style=for-the-badge&logo=github)](https://github.com/Mohameddfxxcxx)
 
 ---
