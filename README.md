@@ -171,7 +171,6 @@ The platform is organized in **eight clearly-bounded layers**, each with a speci
 global-horizon-bank-dwh-project/
 │
 ├── 📊 dashboard/                       # Streamlit applications
-│   ├── app.py                          # Legacy 4-tab dashboard (preserved)
 │   └── app_executive.py                # 9-tab Harvard executive dashboard
 │
 ├── 🗄️ data/                            # Medallion data zones
