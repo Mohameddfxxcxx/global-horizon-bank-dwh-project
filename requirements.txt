@@ -1,0 +1,21 @@
+# Core data processing
+pandas>=2.0.0
+numpy>=1.26.0
+
+# Data generation (synthetic Egypt-market data)
+Faker>=19.0.0
+
+# Dashboard visualization
+streamlit>=1.28.0
+plotly>=5.14.0
+
+# SQL Server integration (optional — app falls back gracefully when missing)
+pymssql>=2.2.8
+SQLAlchemy>=2.0.0
+
+# Predictive analytics (optional but recommended)
+scikit-learn>=1.4.0
+statsmodels>=0.14.0
+
+# Parquet engine for medallion layers (optional — CSV fallback if missing)
+pyarrow>=15.0.0

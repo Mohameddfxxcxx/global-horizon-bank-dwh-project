@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2024-04-24T12:00:00.000Z" agent="Mozilla/5.0" version="24.2.5" type="device">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="OLTP ERD">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="Branches" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Branches&lt;/b&gt;&lt;hr&gt;PK BranchID&lt;br&gt;BranchName&lt;br&gt;Address&lt;br&gt;City&lt;br&gt;State&lt;br&gt;ZipCode" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="160" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Employees" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Employees&lt;/b&gt;&lt;hr&gt;PK EmployeeID&lt;br&gt;FirstName&lt;br&gt;LastName&lt;br&gt;Role&lt;br&gt;FK BranchID&lt;br&gt;HireDate" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="50" width="160" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Customers" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Customers&lt;/b&gt;&lt;hr&gt;PK CustomerID&lt;br&gt;FirstName&lt;br&gt;LastName&lt;br&gt;Email&lt;br&gt;Phone&lt;br&gt;Address&lt;br&gt;City&lt;br&gt;State&lt;br&gt;ZipCode&lt;br&gt;DateOfBirth&lt;br&gt;JoinDate" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="160" height="230" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Accounts" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Accounts&lt;/b&gt;&lt;hr&gt;PK AccountID&lt;br&gt;FK CustomerID&lt;br&gt;FK BranchID&lt;br&gt;AccountType&lt;br&gt;Balance&lt;br&gt;OpenDate&lt;br&gt;Status" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="250" width="160" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Loans" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Loans&lt;/b&gt;&lt;hr&gt;PK LoanID&lt;br&gt;FK CustomerID&lt;br&gt;FK BranchID&lt;br&gt;LoanType&lt;br&gt;PrincipalAmount&lt;br&gt;InterestRate&lt;br&gt;TermMonths&lt;br&gt;StartDate&lt;br&gt;Status" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="160" height="200" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Transactions" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Transactions&lt;/b&gt;&lt;hr&gt;PK TransactionID&lt;br&gt;FK AccountID&lt;br&gt;TransactionType&lt;br&gt;Amount&lt;br&gt;TransactionDate&lt;br&gt;Description&lt;br&gt;FK RelatedAccountID" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="470" width="160" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Relations -->
+        <mxCell id="Rel1" edge="1" parent="1" source="Branches" target="Employees">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel2" edge="1" parent="1" source="Branches" target="Accounts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel3" edge="1" parent="1" source="Branches" target="Loans">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel4" edge="1" parent="1" source="Customers" target="Accounts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel5" edge="1" parent="1" source="Customers" target="Loans">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel6" edge="1" parent="1" source="Accounts" target="Transactions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

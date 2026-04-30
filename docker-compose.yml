@@ -1,0 +1,37 @@
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: global_horizon_sql
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=MyStrongPass123!
+    ports:
+      - "21433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    restart: unless-stopped
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: global_horizon_dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./dashboard:/app/dashboard
+    environment:
+      - STREAMLIT_ENV=production
+      - REQUIRE_SQL_IN_PRODUCTION=true
+      - SQLSERVER_HOST=sql-server
+      - SQLSERVER_PORT=1433
+      - SQLSERVER_USER=sa
+      - SQLSERVER_PASSWORD=MyStrongPass123!
+      - SQLSERVER_DB=GlobalHorizon_DWH
+    depends_on:
+      - sql-server
+    restart: unless-stopped
+
+volumes:
+  sql_data:

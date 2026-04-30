@@ -1,0 +1,3 @@
+freetds-dev
+freetds-bin
+build-essential

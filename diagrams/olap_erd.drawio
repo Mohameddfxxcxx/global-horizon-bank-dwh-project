@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" modified="2024-04-24T12:00:00.000Z" agent="Mozilla/5.0" version="24.2.5" type="device">
+  <diagram id="D2lEEEUBdFMjLlhIrx01" name="OLAP Star Schema">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="Fact_Transaction" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Fact_Transaction&lt;/b&gt;&lt;hr&gt;PK TransactionKey&lt;br&gt;TransactionID&lt;br&gt;FK DateKey&lt;br&gt;FK CustomerKey&lt;br&gt;FK AccountKey&lt;br&gt;FK BranchKey&lt;br&gt;TransactionType&lt;br&gt;Amount" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="250" width="180" height="190" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Dim_Customer" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Dim_Customer (SCD2)&lt;/b&gt;&lt;hr&gt;PK CustomerKey&lt;br&gt;CustomerID&lt;br&gt;FirstName&lt;br&gt;LastName&lt;br&gt;AgeGroup&lt;br&gt;City&lt;br&gt;State&lt;br&gt;EffectiveDate&lt;br&gt;ExpirationDate&lt;br&gt;IsCurrent" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="180" height="210" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Dim_Date" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Dim_Date&lt;/b&gt;&lt;hr&gt;PK DateKey&lt;br&gt;FullDate&lt;br&gt;Year&lt;br&gt;Quarter&lt;br&gt;Month&lt;br&gt;DayOfMonth&lt;br&gt;DayOfWeek" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="180" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Dim_Branch" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Dim_Branch&lt;/b&gt;&lt;hr&gt;PK BranchKey&lt;br&gt;BranchID&lt;br&gt;BranchName&lt;br&gt;City&lt;br&gt;State&lt;br&gt;ZipCode" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="250" width="180" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Dim_Account" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Dim_Account&lt;/b&gt;&lt;hr&gt;PK AccountKey&lt;br&gt;AccountID&lt;br&gt;AccountType&lt;br&gt;OpenDate&lt;br&gt;Status" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="520" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Relations -->
+        <mxCell id="Rel1" edge="1" parent="1" source="Dim_Date" target="Fact_Transaction">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel2" edge="1" parent="1" source="Dim_Customer" target="Fact_Transaction">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel3" edge="1" parent="1" source="Dim_Branch" target="Fact_Transaction">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel4" edge="1" parent="1" source="Dim_Account" target="Fact_Transaction">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

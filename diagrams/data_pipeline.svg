@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e9ecef" />
+    </linearGradient>
+    
+    <linearGradient id="boxGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f3f5" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-opacity="0.15" />
+    </filter>
+    
+    <style>
+      .title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 32px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: 'Segoe UI', Arial, sans-serif; font-size: 18px; fill: #7f8c8d; }
+      .box-title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 18px; font-weight: 600; color: #2c3e50; margin: 0 0 10px 0; }
+      .box-desc { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; color: #555; margin: 0; line-height: 1.4; }
+      .tag { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; margin-top: 8px; }
+      .tag-oltp { background-color: #ffeaa7; color: #d35400; }
+      .tag-etl { background-color: #81ecec; color: #00b894; }
+      .tag-olap { background-color: #a29bfe; color: #6c5ce7; }
+      .tag-viz { background-color: #fab1a0; color: #d63031; }
+      .arrow-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #34495e; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bgGradient)" rx="15" />
+
+  <!-- Header -->
+  <text x="600" y="50" text-anchor="middle" class="title">Global Horizon Bank Data Architecture</text>
+  <text x="600" y="80" text-anchor="middle" class="subtitle">End-to-End Enterprise Data Pipeline (OLTP to Insights)</text>
+
+  <!-- Node 1: OLTP / Data Generation -->
+  <g transform="translate(50, 200)">
+    <rect width="220" height="180" rx="10" fill="url(#boxGradient)" filter="url(#shadow)" stroke="#dfe6e9" stroke-width="2"/>
+    <foreignObject x="15" y="15" width="190" height="150">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="height: 100%; display: flex; flex-direction: column;">
+        <h3 class="box-title">1. OLTP System</h3>
+        <p class="box-desc">Highly normalized (3NF) SQL Server transactional database.</p>
+        <p class="box-desc"><i>Data generated via Python (Faker/Pandas).</i></p>
+        <div><span class="tag tag-oltp">Phases 2 - 4</span></div>
+      </div>
+    </foreignObject>
+  </g>
+
+  <!-- Node 2: ETL Process -->
+  <g transform="translate(350, 200)">
+    <rect width="220" height="180" rx="10" fill="url(#boxGradient)" filter="url(#shadow)" stroke="#dfe6e9" stroke-width="2"/>
+    <foreignObject x="15" y="15" width="190" height="150">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="height: 100%; display: flex; flex-direction: column;">
+        <h3 class="box-title">2. ETL Pipeline</h3>
+        <p class="box-desc">T-SQL Stored Procedures for Extracting, Transforming, and Loading data.</p>
+        <p class="box-desc"><i>Handles data cleansing.</i></p>
+        <div><span class="tag tag-etl">Phase 5</span></div>
+      </div>
+    </foreignObject>
+  </g>
+
+  <!-- Node 3: OLAP / Data Warehouse -->
+  <g transform="translate(650, 200)">
+    <rect width="220" height="180" rx="10" fill="url(#boxGradient)" filter="url(#shadow)" stroke="#dfe6e9" stroke-width="2"/>
+    <foreignObject x="15" y="15" width="190" height="150">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="height: 100%; display: flex; flex-direction: column;">
+        <h3 class="box-title">3. Data Warehouse</h3>
+        <p class="box-desc">Dimensional Star Schema in SQL Server.</p>
+        <p class="box-desc"><i>Includes SCD Type 2 &amp; Columnstore Indexes.</i></p>
+        <div><span class="tag tag-olap">Phases 6 - 8</span></div>
+      </div>
+    </foreignObject>
+  </g>
+
+  <!-- Node 4: Streamlit Dashboard -->
+  <g transform="translate(950, 200)">
+    <rect width="220" height="180" rx="10" fill="url(#boxGradient)" filter="url(#shadow)" stroke="#dfe6e9" stroke-width="2"/>
+    <foreignObject x="15" y="15" width="190" height="150">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="height: 100%; display: flex; flex-direction: column;">
+        <h3 class="box-title">4. Dashboard + Recommendations</h3>
+        <p class="box-desc">Interactive executive reporting with Streamlit &amp; Plotly.</p>
+        <p class="box-desc"><i>KPIs, behavior analysis, and business recommendations.</i></p>
+        <div><span class="tag tag-viz">Phase 9</span></div>
+      </div>
+    </foreignObject>
+  </g>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#b2bec3" />
+    </marker>
+  </defs>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 270 290 L 335 290" stroke="#b2bec3" stroke-width="4" fill="none" marker-end="url(#arrowhead)" />
+  <text x="310" y="275" class="arrow-text">Extract</text>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 570 290 L 635 290" stroke="#b2bec3" stroke-width="4" fill="none" marker-end="url(#arrowhead)" />
+  <text x="605" y="275" class="arrow-text">Load</text>
+
+  <!-- Arrow 3 to 4 -->
+  <path d="M 870 290 L 935 290" stroke="#b2bec3" stroke-width="4" fill="none" marker-end="url(#arrowhead)" />
+  <text x="905" y="275" class="arrow-text">Query</text>
+
+</svg>

@@ -1,0 +1,201 @@
+EmployeeID,FirstName,LastName,Role,BranchID,HireDate
+1,Ahmed,Ashraf,Teller,320,2022-03-01
+2,Mona,Saad,Loan Officer,242,2020-10-23
+3,Nour,Gamal,Manager,529,2017-01-18
+4,Ahmed,Izzat,Loan Officer,703,2024-02-16
+5,Amr,Morsi,Teller,814,2025-06-08
+6,Aya,Saad,Manager,204,2018-06-08
+7,Yasmin,Naguib,Teller,925,2022-10-02
+8,Salma,Zaki,Teller,242,2017-08-26
+9,Yasmin,Younes,Manager,859,2025-09-14
+10,Khaled,Nassar,Teller,350,2021-04-19
+11,Rehab,Abdelrahman,Manager,854,2022-06-19
+12,Laila,Helmy,Manager,132,2026-02-18
+13,Doaa,Shawky,Manager,444,2019-08-01
+14,Aya,Adel,Loan Officer,818,2017-06-30
+15,Hoda,Fathy,Manager,704,2017-02-02
+16,Omar,Mostafa,Teller,877,2020-03-10
+17,Ayman,Nassar,Manager,754,2021-03-27
+18,Omar,Rashad,Teller,704,2017-09-01
+19,Omar,Mahmoud,Loan Officer,381,2020-04-09
+20,Khaled,Farag,Customer Service,189,2018-01-11
+21,Mina,Izzat,Customer Service,532,2022-10-12
+22,Laila,Gamal,Manager,328,2021-01-15
+23,Karim,Ashraf,Customer Service,716,2024-01-10
+24,Doaa,Gamal,Customer Service,194,2022-07-08
+25,Mostafa,Ashraf,Teller,859,2019-01-29
+26,Dina,Izzat,Loan Officer,328,2022-08-11
+27,Khaled,Shawky,Manager,928,2022-05-10
+28,Hoda,Sayed,Customer Service,858,2019-11-16
+29,Mona,Kamal,Manager,381,2020-11-07
+30,Hoda,Helmy,Teller,859,2017-07-11
+31,Ahmed,Abdelrahman,Manager,792,2019-03-23
+32,Nesma,Zaki,Customer Service,189,2025-05-26
+33,Dina,Mahmoud,Manager,674,2020-06-23
+34,Ahmed,Adel,Loan Officer,529,2019-02-03
+35,Nour,Gamal,Customer Service,204,2024-03-05
+36,Hany,Younes,Manager,859,2022-10-07
+37,Mostafa,Izzat,Loan Officer,859,2020-11-26
+38,Mostafa,Nassar,Customer Service,703,2025-10-14
+39,Tarek,Mahmoud,Teller,858,2020-01-18
+40,Omar,Saleh,Teller,320,2021-10-30
+41,Khaled,Adel,Teller,106,2017-04-06
+42,Khaled,Nassar,Teller,263,2020-03-17
+43,Youssef,Gamal,Loan Officer,132,2016-11-09
+44,Ibrahim,Ashraf,Loan Officer,532,2021-09-05
+45,Fatma,Adel,Manager,259,2023-02-19
+46,Aya,Kamal,Loan Officer,199,2020-11-12
+47,Omar,Hassan,Customer Service,263,2017-06-09
+48,Karim,Abdelrahman,Manager,703,2019-11-26
+49,Fatma,Sayed,Loan Officer,381,2025-12-17
+50,Khaled,Amin,Loan Officer,792,2021-08-31
+51,Hoda,Helmy,Loan Officer,263,2019-12-06
+52,Ahmed,Ashraf,Loan Officer,259,2024-10-21
+53,Karim,Sayed,Loan Officer,242,2023-01-16
+54,Karim,Izzat,Manager,130,2024-02-13
+55,Nour,Saleh,Manager,444,2018-09-28
+56,Mariam,Shawky,Loan Officer,703,2020-10-25
+57,Rehab,Farag,Teller,350,2018-09-08
+58,Doaa,Farag,Teller,754,2020-07-04
+59,Mariam,Sayed,Loan Officer,792,2025-11-11
+60,Hoda,Helmy,Customer Service,990,2025-06-25
+61,Ahmed,Fathy,Teller,881,2020-10-12
+62,Sherif,Helmy,Teller,127,2026-04-04
+63,Sherif,Gamal,Manager,125,2023-08-08
+64,Aya,Amin,Teller,716,2026-03-28
+65,Ibrahim,Ashraf,Manager,259,2023-02-08
+66,Karim,Amin,Customer Service,263,2022-06-21
+67,Sherif,Samir,Manager,858,2020-01-16
+68,Nesma,Hassan,Manager,489,2018-08-31
+69,Mariam,Gamal,Manager,130,2024-12-24
+70,Tarek,Rashad,Teller,674,2024-09-15
+71,Mahmoud,Zaki,Manager,658,2017-11-09
+72,Sara,Amin,Loan Officer,704,2017-02-10
+73,Ayman,Hassan,Manager,303,2018-03-06
+74,Mariam,Farag,Teller,467,2018-11-29
+75,Mona,Amin,Customer Service,320,2019-01-13
+76,Mariam,Hassan,Teller,132,2023-06-30
+77,Amr,Nassar,Loan Officer,125,2017-05-23
+78,Karim,Saleh,Customer Service,716,2022-11-09
+79,Salma,Gamal,Teller,674,2022-10-21
+80,Hany,Farag,Teller,444,2024-04-10
+81,Doaa,Hassan,Manager,127,2025-04-24
+82,Doaa,Abdelrahman,Loan Officer,263,2020-08-03
+83,Salma,Ashraf,Teller,194,2025-09-21
+84,Aya,Morsi,Loan Officer,259,2016-07-04
+85,Nesma,Mostafa,Customer Service,881,2018-04-05
+86,Nour,Helmy,Manager,658,2025-06-12
+87,Nesma,Ashraf,Customer Service,320,2020-11-06
+88,Amr,Saleh,Loan Officer,303,2022-02-05
+89,Ahmed,Younes,Loan Officer,189,2018-03-18
+90,Doaa,Nassar,Loan Officer,529,2021-04-21
+91,Hoda,Kamal,Manager,703,2023-09-16
+92,Laila,Izzat,Manager,259,2019-01-01
+93,Youssef,Younes,Loan Officer,350,2024-01-12
+94,Khaled,Ashraf,Loan Officer,704,2016-05-14
+95,Hany,Sayed,Teller,125,2020-10-16
+96,Khaled,Zaki,Teller,529,2024-10-29
+97,Nesma,Saad,Manager,444,2019-05-09
+98,Rania,Zaki,Customer Service,532,2024-12-12
+99,Sherif,Saad,Teller,199,2018-02-14
+100,Karim,Gamal,Manager,858,2021-05-22
+101,Sara,Mahmoud,Manager,242,2024-12-12
+102,Sara,Sayed,Customer Service,259,2019-09-11
+103,Salma,Kamal,Customer Service,990,2018-11-29
+104,Hoda,Naguib,Customer Service,818,2022-09-03
+105,Fatma,Samir,Loan Officer,467,2019-01-22
+106,Rehab,Saad,Manager,130,2025-06-27
+107,Hoda,Abdelrahman,Loan Officer,532,2025-05-02
+108,Mona,Mostafa,Loan Officer,928,2016-04-27
+109,Youssef,Sayed,Manager,704,2021-10-29
+110,Rania,Rashad,Manager,444,2024-08-16
+111,Ibrahim,Abdelrahman,Customer Service,833,2016-08-23
+112,Mariam,Helmy,Customer Service,833,2018-03-20
+113,Mostafa,Shawky,Customer Service,674,2022-06-27
+114,Mohamed,Nassar,Customer Service,325,2021-07-17
+115,Ahmed,Amin,Loan Officer,199,2020-05-20
+116,Rania,Gamal,Manager,559,2017-04-18
+117,Ayman,Farag,Customer Service,559,2020-05-29
+118,Mohamed,Adel,Loan Officer,259,2025-12-18
+119,Dina,Izzat,Manager,529,2017-08-26
+120,Mina,Saleh,Teller,303,2017-10-08
+121,Mohamed,Abdelrahman,Customer Service,854,2024-07-30
+122,Sara,Naguib,Teller,132,2017-06-28
+123,Rania,Mostafa,Manager,529,2025-05-17
+124,Salma,Mostafa,Customer Service,130,2018-06-14
+125,Nesma,Farag,Teller,325,2018-06-30
+126,Mohamed,Izzat,Teller,716,2024-05-25
+127,Ayman,Saad,Teller,467,2025-08-31
+128,Mahmoud,Hassan,Manager,658,2019-02-14
+129,Mohamed,Saleh,Manager,532,2020-10-27
+130,Mina,Zaki,Teller,106,2025-04-15
+131,Ibrahim,Kamal,Loan Officer,467,2023-07-06
+132,Yasmin,Naguib,Teller,467,2019-12-01
+133,Tarek,Younes,Teller,877,2025-06-27
+134,Mohamed,Younes,Customer Service,303,2019-09-25
+135,Hany,Abdelrahman,Manager,328,2021-08-12
+136,Aya,Ashraf,Teller,106,2023-02-06
+137,Mahmoud,Amin,Customer Service,259,2022-08-31
+138,Yasmin,Abdelrahman,Loan Officer,754,2023-10-07
+139,Nesma,Zaki,Teller,765,2025-02-12
+140,Yasmin,Saad,Customer Service,444,2023-12-29
+141,Sherif,Gamal,Manager,194,2018-05-15
+142,Mona,Saleh,Customer Service,529,2020-07-12
+143,Doaa,Izzat,Loan Officer,338,2020-02-19
+144,Khaled,Abdelrahman,Loan Officer,818,2017-05-26
+145,Khaled,Kamal,Customer Service,617,2022-01-23
+146,Mohamed,Zaki,Loan Officer,858,2016-09-01
+147,Rehab,Shawky,Loan Officer,132,2025-09-25
+148,Mariam,Farag,Loan Officer,990,2020-03-23
+149,Ahmed,Morsi,Manager,350,2020-01-22
+150,Khaled,Izzat,Customer Service,559,2016-06-07
+151,Khaled,Rashad,Customer Service,448,2017-07-09
+152,Rehab,Kamal,Teller,350,2017-04-24
+153,Nour,Samir,Customer Service,881,2020-03-16
+154,Khaled,Younes,Loan Officer,325,2017-06-16
+155,Heba,Gamal,Loan Officer,716,2016-11-05
+156,Sara,Farag,Loan Officer,132,2021-12-07
+157,Ayman,Fathy,Manager,338,2017-07-08
+158,Hassan,Izzat,Manager,658,2025-01-21
+159,Ibrahim,Izzat,Customer Service,130,2020-05-11
+160,Nour,Fathy,Manager,195,2021-01-18
+161,Ayman,Amin,Manager,323,2024-07-27
+162,Ahmed,Rashad,Manager,130,2019-12-16
+163,Mahmoud,Mahmoud,Loan Officer,881,2025-06-26
+164,Mina,Saad,Customer Service,328,2018-07-25
+165,Ahmed,Nassar,Loan Officer,325,2026-01-10
+166,Laila,Kamal,Loan Officer,858,2026-02-11
+167,Mostafa,Farag,Customer Service,242,2024-05-09
+168,Omar,Adel,Customer Service,381,2020-06-11
+169,Mostafa,Sayed,Manager,106,2024-05-10
+170,Aya,Abdelrahman,Manager,242,2023-03-28
+171,Nesma,Saleh,Manager,467,2019-07-21
+172,Rania,Kamal,Customer Service,323,2017-12-01
+173,Doaa,Younes,Teller,263,2017-12-17
+174,Karim,Shawky,Manager,132,2023-08-24
+175,Youssef,Naguib,Manager,858,2022-05-04
+176,Omar,Naguib,Teller,833,2023-07-09
+177,Hoda,Rashad,Customer Service,195,2023-04-22
+178,Mahmoud,Samir,Loan Officer,444,2024-04-03
+179,Nour,Rashad,Customer Service,381,2017-03-26
+180,Ayman,Farag,Manager,765,2017-12-26
+181,Hassan,Helmy,Manager,448,2017-05-05
+182,Sherif,Farag,Manager,381,2023-02-28
+183,Mostafa,Naguib,Loan Officer,925,2022-01-31
+184,Nour,Kamal,Teller,529,2018-03-03
+185,Aya,Rashad,Customer Service,130,2020-07-17
+186,Rehab,Kamal,Teller,925,2019-07-28
+187,Mahmoud,Gamal,Loan Officer,925,2019-07-19
+188,Fatma,Hassan,Teller,704,2025-06-08
+189,Mohamed,Ashraf,Loan Officer,106,2023-12-11
+190,Mahmoud,Naguib,Customer Service,384,2018-09-12
+191,Hoda,Farag,Manager,877,2023-06-28
+192,Doaa,Saad,Customer Service,350,2019-06-08
+193,Laila,Amin,Customer Service,617,2021-01-18
+194,Salma,Ashraf,Teller,792,2024-03-07
+195,Mariam,Gamal,Customer Service,195,2020-07-24
+196,Dina,Helmy,Teller,529,2017-08-05
+197,Youssef,Mostafa,Loan Officer,338,2023-11-07
+198,Hassan,Adel,Teller,259,2025-09-03
+199,Sara,Gamal,Teller,658,2017-12-23
+200,Yasmin,Saleh,Customer Service,814,2017-03-04
